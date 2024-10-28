@@ -5,24 +5,36 @@ body {
 
 .Title {
 	color: aqua;
-	font-size: 150px;
+	font-size: 100px;
 	text-align: center;
 	margin: 20px 0; /* Espacio arriba y abajo del título */
 }
 
 .menu {
 	text-align: center; /* Centra los botones */
-	margin: 20px 0; /* Espacio arriba y abajo del menú */
+	margin: 10px 0; /* Espacio arriba y abajo del menú */
+}
+
+.photo {
+	text-align: center; /* Centra los botones */
+	margin: 10px 0;/* Espacio arriba y abajo del menú */
+	
+}
+.photo img {
+	width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+	max-width: 700px; /* Tamaño máximo de la imagen */
+	height: auto; /* Mantiene la relación de aspecto */
 }
 
 .menu button {
-	padding: 10px 30px; /* Tamaño de los botones */
+	padding: 5px 30px; /* Tamaño de los botones */
 	margin: 5px; /* Espacio entre los botones */
-	font-size: 25px; /* Tamaño de la fuente */
+	font-size: 20px; /* Tamaño de la fuente */
 	background-color: aqua; /* Color de fondo */
 	color: white; /* Color del texto */
-	border: none; /* Sin borde */
-	border-radius: 10px; /* Bordes redondeados */
+	/*border:none;  Sin borde */
+	border-color: #fb9c0c;
+	border-radius: 20px; /* Bordes redondeados */
 	cursor: pointer; /* Cambia el cursor al pasar el mouse */
 	transition: background-color 0.3s; /* Transición suave para el cambio de color */
 }
@@ -36,20 +48,5 @@ body {
 	background-color: #fb9c0c; /* Color de fondo al pasar el mouse */
 }
 
-image{
-	align-items: center;
-}
-/* 
-Cambios y Mejoras
-Centrado de Botones: Añadí text-align: center; a la clase .menu para centrar los botones dentro de su contenedor.
 
-Margen en el Título: Añadí márgenes al título para que haya espacio arriba y abajo, mejorando la legibilidad.
 
-Transiciones: Se añadió una transición suave a los botones para que el cambio de color sea más atractivo.
-
-Cambio de Enlaces: He modificado los href de los botones para que apunten a diferentes archivos (biografia.html, portfolio.html, y contacto.html). Asegúrate de que esos archivos existan en tu proyecto.
-
-Descripción de Imagen: Agregué un texto alternativo en el <figcaption> para que sea más accesible.
-
-Con estas mejoras, tu página debería verse más pulida y los botones estarán perfectamente centrados. Si necesitas más ajustes, ¡dímelo!
-*/
