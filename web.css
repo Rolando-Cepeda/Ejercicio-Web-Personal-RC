@@ -177,5 +177,67 @@ p span {
 
 .text {
 	max-width: 800px;
+	flex: 1;
 	/* Limitar el ancho del texto */
+}
+.video-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px; /* Espacio entre los videos */
+}
+
+.video-item {
+	text-align: center; /* Centrar texto debajo del video */
+	flex-direction: column; /* Alinea los elementos en columna */
+	text-align: center; /* Centrar el texto */
+	min-height: 300px; /* Establecer una altura mínima para igualar los elementos */
+	border-radius: 15px; /* Bordes redondeados */
+	padding: 10px; /* Espaciado interno */
+	background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente transparente */
+}
+
+.video-item img {
+	width: 100%; /* Asegurarse de que la imagen se ajuste al ancho */
+	height: auto; /* Mantener la relación de aspecto */
+	border-radius: 15px; /* Bordes redondeados */
+}
+
+.video-item p {
+	color: white; /* Color del texto */
+	font-size: 16px; /* Tamaño de fuente más pequeño para mejor lectura */
+	flex-grow: 1; /* Permitir que el párrafo crezca */
+	margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+
+video {
+	width: 100%; /* Para que se ajusten al tamaño de la columna */
+	height: auto;
+	border-radius: 15px; /* Bordes redondeados */
+}
+
+/* ***Portafolio*** */
+.portfolio {
+	width: 40%;
+	height: auto;
+	max-width: 700px;
+	margin: 20px 0;
+	border-radius: 15px;
+	
+}
+.portfolio_2 {
+	width: 60%;
+	height: auto;
+	max-width: 700px;
+	margin: 20px 0;
+	border-radius: 15px;
+	
+}
+
+.portfolio_3 {
+	width: 100%;
+	height: auto;
+	max-width: 700px;
+	margin: 20px 0;
+	border-radius: 15px;
+	
 }
