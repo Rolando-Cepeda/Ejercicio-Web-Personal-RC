@@ -83,7 +83,6 @@ p {
 /* Estilos del formulario */
 .contacto {
 	background-color: #1e1e1e;
-	/* Fondo del formulario en gris oscuro */
 	border-radius: 12px;
 	padding: 30px;
 	width: 100%;
@@ -168,3 +167,4 @@ footer p {
 	font-weight: bold;
 	color: black;
 }
+
