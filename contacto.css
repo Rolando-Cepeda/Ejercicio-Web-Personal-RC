@@ -1,6 +1,7 @@
 body {
 	background-color: black;
-	margin: 0; /* Elimina el margen por defecto */
+	margin: 0;
+	/* Elimina el margen por defecto */
 }
 
 .content {
@@ -16,19 +17,27 @@ body {
 	color: white;
 }
 
-h2.title_contacto {
+header h2 {
 	color: #fb9c0c;
-	font-size: 25px;
+	font-size: 30px;
 	text-align: center;
-	margin-block-start: 10px;
+	/* margin-block: 20px; */
+	margin-block-start: 15px;
 }
 
-h2 {
+/* h2 {
 	color: #fb9c0c;
 	font-size: 28px;
 	text-align: center;
 	margin-bottom: 10px;
 	font-weight: bold;
+} */
+
+h2 {
+	color: #fb9c0c;
+	font-size: 30px;
+	text-align: center;
+	margin-block-start: 15px;
 }
 
 /* *** Estilo de la Navbar*** */
@@ -73,7 +82,8 @@ p {
 
 /* Estilos del formulario */
 .contacto {
-	background-color: #1e1e1e; /* Fondo del formulario en gris oscuro */
+	background-color: #1e1e1e;
+	/* Fondo del formulario en gris oscuro */
 	border-radius: 12px;
 	padding: 30px;
 	width: 100%;
@@ -139,4 +149,22 @@ p {
 
 .contacto input[type="submit"]:hover {
 	background-color: #ffa726;
+}
+
+footer {
+	background-color: #fb9c0c;
+	padding: 15px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	color: white;
+	font-size: 16px;
+}
+
+footer p {
+	margin: 0;
+	text-align: center;
+	font-weight: bold;
+	color: black;
 }
