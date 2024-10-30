@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CONTACTO</title>
+	<title>Formulario de contacto</title>
+	<link rel="stylesheet" href="contacto.css">
 </head>
-<body>
-	<h1>CONTACTO</h1>
 
-	<button><a href="/">INICIO</a></button>
-	<button><a href="biografia.html">BIOGRAFÍA</a></button>
-	<button><a href="portfolio.html">PORTAFOLIIO</a></button>
+<body class="b1">
+	<nav class="navbar">
+		<button><a href="/" target="_blank">Inicio</a></button>
+		<button><a href="biografia.html" target="_blank">Biografía</a></button>
+		<button><a href="portfolio.html" target="_blank">Portfolio</a></button>
+	</nav>
+
+	<div class="container">
+		<h2>Solicita la Contratación de Nuestros DJs</h2>
+		<p>¡Lleva la energía de GOlive Experience a tu evento! Completa el formulario para recibir una propuesta
+			personalizada.</p>
+
+		<form action="guardar.js" method="POST" class="contacto">
+			<label for="nombre">Nombre completo:</label>
+			<input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+
+			<label for="email">Correo electrónico:</label>
+			<input type="email" id="email" name="email" placeholder="tuemail@dominio.com" required>
+
+			<label for="telefono">Teléfono de contacto:</label>
+			<input type="tel" id="telefono" name="telefono" placeholder="+1 123 456 7890" required>
+
+			<label for="evento">Tipo de evento:</label>
+			<select id="evento" name="evento" required>
+				<option value="fiesta_privada">Fiesta privada</option>
+				<option value="boda">Boda</option>
+				<option value="evento_corporativo">Evento corporativo</option>
+				<option value="festival">Festival</option>
+				<option value="otro">Otro</option>
+			</select>
+
+			<label for="dj">DJ solicitado:</label>
+			<select id="dj" name="dj" required>
+				<option value="dj_wuazat">DJ Wuazat</option>
+				<option value="dj_nano">DJ Nano</option>
+				<option value="cualquier_dj">No tengo preferencia</option>
+			</select>
+
+			<label for="fecha">Fecha del evento:</label>
+			<input type="date" id="fecha" name="fecha" required>
+
+			<label for="audiencia">Tamaño de la audiencia (aproximado):</label>
+			<input type="number" id="audiencia" name="audiencia" min="10" placeholder="Número de personas" required>
+
+			<label for="mensaje">Mensaje o requisitos especiales:</label>
+			<textarea id="mensaje" name="mensaje" rows="4"
+				placeholder="Cuéntanos más sobre el evento y tus expectativas"></textarea>
+
+			<div class="checkbox">
+				<input type="checkbox" id="info" name="info">
+				<label for="info">Quiero recibir novedades y promociones de GOlive Experience.</label>
+			</div>
+
+			<div class="checkbox">
+				<input type="checkbox" id="condiciones" name="condiciones" required>
+				<label for="condiciones">Acepto los términos y condiciones, así como la política de privacidad.</label>
+			</div>
+
+			<input type="submit" value="Solicitar Cotización">
+		</form>
+	</div>
 </body>
+
 </html>

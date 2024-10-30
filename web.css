@@ -10,6 +10,11 @@ body.b1 {
 	/* Elimina el margen por defecto */
 }
 
+header {
+    background-color: #110000;
+    color: rgb(252, 132, 5);
+    text-align: center;
+}
 /* *** Estilo de la navbar *** */
 .navbar {
 	text-align: center;
