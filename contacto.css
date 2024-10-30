@@ -1,87 +1,92 @@
-/* contact.css */
-
-body.b1 {
-	background-color: black;
-	margin: 0;
-}
-
-.navbar {
-	text-align: center;
-	padding: 10px 0;
-	background-color: #fb9c0c;
-	margin-bottom: 20px;
-	display: flex;
-	justify-content: center;
-	gap: 10px;
-}
-
-.navbar button {
-	background-color: transparent;
-	border: none;
-}
-
-.navbar a {
-	text-decoration: none;
-	color: white;
-	padding: 10px 20px;
-	border-radius: 5px;
-	font-weight: bold;
-	background-color: #0073e6;
-	transition: background-color 0.3s;
-}
-
-.navbar a:hover {
-	background-color: #005bb5;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+	background-color: black;
+	margin: 0; /* Elimina el margen por defecto */
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 600px;
-    padding: 20px;
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	/* background-color: #121212; */
+	/* max-width: 800px; */
+	padding: 20px;
+	margin: 40px;
+	color: white;
+}
+
+h2.title_contacto {
+	color: #fb9c0c;
+	font-size: 25px;
+	text-align: center;
+	margin-block-start: 10px;
 }
 
 h2 {
-    color: #333;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+	color: #fb9c0c;
+	font-size: 28px;
+	text-align: center;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+/* *** Estilo de la Navbar*** */
+.navbar {
+	text-align: center;
+	padding: 10px 0;
+	/* Espaciado vertical */
+	background-color: #fb9c0c;
+	/* Color de fondo de la navbar */
+	margin-bottom: 20px;
+	/* Separación del contenido principal */
+}
+
+.navbar button {
+	padding: 10px 30px;
+	margin: 5px;
+	font-size: 20px;
+	background-color: rgb(252, 252, 252);
+	color: white;
+	/* border: none; */
+	border-color: #fb9c0c;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.navbar button a {
+	text-decoration: none;
+	color: rgb(11, 0, 0);
+}
+
+.navbar button:hover {
+	background-color: #fb9c0c;
 }
 
 p {
-    color: #555;
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-    max-width: 500px;
+	color: #e0e0e0;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
+/* Estilos del formulario */
 .contacto {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px 30px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
+	background-color: #1e1e1e; /* Fondo del formulario en gris oscuro */
+	border-radius: 12px;
+	padding: 30px;
+	width: 100%;
+	max-width: 600px;
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .contacto label {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 10px;
-    display: block;
-    color: #333;
+	color: #fb9c0c;
+	font-size: 18px;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
 }
 
 .contacto input[type="text"],
@@ -91,51 +96,47 @@ p {
 .contacto input[type="number"],
 .contacto select,
 .contacto textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #fb9c0c;
+	border-radius: 5px;
+	background-color: #2a2a2a;
+	color: white;
 }
 
-.contacto textarea {
-    resize: vertical;
+.contacto input::placeholder,
+.contacto textarea::placeholder {
+	color: #9e9e9e;
 }
 
-.contacto .checkbox {
-    margin: 10px 0;
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
+/* Estilo de los checkboxes */
+.checkbox {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
 }
 
-.contacto .checkbox input {
-    margin-right: 8px;
+.checkbox label {
+	color: #fb9c0c;
+	font-size: 16px;
+	margin-left: 5px;
 }
 
+/* Botón de envío */
 .contacto input[type="submit"] {
-    background-color: #0073e6;
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-    width: 100%;
+	background-color: #fb9c0c;
+	color: white;
+	padding: 12px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+	width: 100%;
 }
 
 .contacto input[type="submit"]:hover {
-    background-color: #005bb5;
-}
-
-.contacto input:focus,
-.contacto select:focus,
-.contacto textarea:focus {
-    outline: none;
-    border: 1px solid #0073e6;
-    box-shadow: 0px 0px 3px rgba(0, 115, 230, 0.5);
+	background-color: #ffa726;
 }
